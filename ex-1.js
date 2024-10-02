@@ -5,3 +5,13 @@ let blueColor;
 let fourthColor;
 let fifthColor;
 let tenthColor;
+
+
+blueColor   = colors[2]
+fourthColor = colors[3]
+fifthColor   = colors[4]
+tenthColor  = colors[9]
+console.log(`blueColor :${blueColor }`);
+console.log(`fourthColor :${fourthColor}`);
+console.log(`fifthColor :${fifthColor}`);
+console.log(`tenthColor :${tenthColor}`);
