@@ -22,3 +22,7 @@ const employees = [
 ];
 
 // Start coding here
+let updatedEmployees = employees.filter(
+  (employee) => employee.name !== "Kody"
+);
+console.log(updatedEmployees);

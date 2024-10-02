@@ -46,3 +46,31 @@ let isArray;
 let creditCardTypeOfBlindermann;
 let productQuantityOfJoannet;
 let totalPurchaseOfDary;
+
+// ข้อที่ 1
+isArray = Array.isArray(orders); // ตรวจสอบว่า orders เป็น Array หรือไม่
+console.log(isArray);
+
+// ข้อที่ 2
+creditCardTypeOfBlindermann = orders.find(
+  (creditCardType) => creditCardType.customerName === "Toinette Blindermann"
+).creditCardType;
+console.log(creditCardTypeOfBlindermann);
+
+// ข้อที่ 3
+orders[2]["creditCardType"] = "visa";
+console.log(orders[2]["creditCardType"]);
+
+// ข้อที่ 4
+productQuantityOfJoannet = orders[3]["productQuantity"];
+console.log(productQuantityOfJoannet);
+
+// ข้อที่ 5
+totalPurchaseOfDary = orders[1]["productPrice"] * orders[1]["productQuantity"];
+console.log(totalPurchaseOfDary);
+
+// ข้อที่ 6
+orders.shift();
+
+// ข้อที่ 7
+console.log(orders);
